@@ -1,16 +1,17 @@
+** I'm gonna Bee your new slicer
 **A SuperSlicer fork (which is a PrusaSlicer fork (which is a slic3r fork)** (previously Slic3r++))
 
 <p align="center">
-  <img src="media/Mortadella_Slic3r.PNG">
+  <img src="media/Bee_Slic3r.PNG">
 </p>
 
-Prebuilt Windows, Linux and macOS 64-bit releases are available through the [git releases page](https://github.com/supermerill/SuperSlicer/releases). The Windows & macOS builds aren't tested, just compiled, so please report any bugs that may occur during use.  
+Prebuilt Windows, Linux and macOS 64-bit releases are available through the [git releases page](https://github.com/melROLL/Bee_Slic3r/releases). 
 For **installers**, check the badges above. Windows users can use chocolatey or scoop.  
 
-Mortadella_Slic3r takes 3D models (STL, OBJ, AMF) and converts them into G-code
+Bee_Slic3r takes 3D models (STL, OBJ, AMF) and converts them into G-code
 instructions for FFF printers or PNG layers for mSLA 3D printers. It's compatible with any modern printer based on the RepRap toolchain which is running a firmware based on Marlin, Prusa, Klipper, etc.
 
-Mortadella_Slic3r is based on [SuperSlicer](https://github.com/supermerill/SuperSlicer) by Supermerill  
+Bee_Slic3r is based on [SuperSlicer](https://github.com/supermerill/SuperSlicer) by Supermerill  
 SuperSlicer is based on [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) by Prusa Research.
 PrusaSlicer is based on [Slic3r](https://github.com/Slic3r/Slic3r) by Alessandro Ranellucci and the RepRap community.
 
@@ -54,10 +55,10 @@ Almost everything is written in C++, C and HTML.
 
 ### How to compile
 
-If you are on linux or running a VM you can also use Prosciutto_Slic3r, it is a script I made that can compile easilly for you Mortadella_Slic3r or SuperSlicer : https://github.com/melROLL/Prosciutto_Slic3r
+If you are on linux or running a VM you can also use Prosciutto_Slic3r, it is a script I made that can compile easilly for you Bee_Slic3r Mortadella_Slic3r or SuperSlicer : https://github.com/melROLL/Prosciutto_Slic3r
 
 If you want to compile the source yourself, follow the instructions on one of
-these documentation pages (those instruction are for SuperSlicer if you want to make it for Mortadella_Slic3r, change the github link to this one : https://github.com/melROLL/Mortadella_Slic3r.git ):
+these documentation pages (those instruction are for SuperSlicer if you want to make it for Mortadella_Slic3r, change the github link to this one : https://github.com/melROLL/Bee_Slic3r.git ):
 * [Linux](doc/How%20to%20build%20-%20Linux%20et%20al.md)
 * [macOS](doc/How%20to%20build%20-%20Mac%20OS.md)
 * [Windows](doc/How%20to%20build%20-%20Windows.md)
