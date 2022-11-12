@@ -23490,7 +23490,7 @@ msgid "%.2f - %.2f mm"
 msgstr "%.2f - %.2f mm"
 
 msgid ""
-"SuperSlicer is based on PrusaSlicer which is based on Slic3r by Alessandro "
+"WaspSlicer is based on SuperSlicer wich is based on PrusaSlicer which is based on Slic3r by Alessandro "
 "Ranellucci and the RepRap community."
 msgstr ""
 "SuperSlicer è basato su PrusaSlicer che è basato su Slic3r di Alessandro "
