@@ -1,4 +1,4 @@
-** I'm gonna Bee your new slicer
+* I'm gonna Bee your new slicer
 **A SuperSlicer fork (which is a PrusaSlicer fork (which is a slic3r fork)** (previously Slic3r++))
 
 <p align="center">
