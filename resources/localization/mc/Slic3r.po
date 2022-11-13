@@ -11320,10 +11320,10 @@ msgstr ""
 
 msgid ""
 "Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
-"296acc"
+"#003ec9"
 msgstr ""
 "Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : #003ec9, SuperSlicer(bleu) : "
-"296acc"
+"#003ec9"
 
 msgid ""
 "Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "

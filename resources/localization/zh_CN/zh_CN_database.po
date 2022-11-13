@@ -13864,10 +13864,10 @@ msgstr ""
 
 msgid ""
 "Slic3r(yellow): ada230, PrusaSlicer(orange): c46737, SuperSlicer(blue): "
-"0047c7"
+"#003ec9"
 msgstr ""
 "Slic3r（黄色）：ada230，PrusaSlicer（橙色）：c46737，SuperSlicer（蓝色）："
-"0047c7"
+"#003ec9"
 
 msgid ""
 "Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): "
