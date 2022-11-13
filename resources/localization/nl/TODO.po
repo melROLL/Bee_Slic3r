@@ -6378,7 +6378,7 @@ msgstr ""
 #: src/slic3r/GUI/Preferences.cpp:808
 msgid ""
 "Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): "
-"275cad"
+"#003ec9"
 msgstr ""
 
 
