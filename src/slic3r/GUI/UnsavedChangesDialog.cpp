@@ -907,7 +907,7 @@ void UnsavedChangesDialog::build(Preset::Type type, PresetCollection* dependent_
                                                                                       format_wxstr(_L("You will not be asked about the unsaved changes in presets the next time you: \n"
 						                                                                    "- Closing %1% while some presets are modified,\n"
 						                                                                    "- Loading a new project while some presets are modified"), SLIC3R_APP_NAME) ;
-            wxString msg = format_wxstr(_L("%1% will remember your action."), =) + "\n\n" + action + "\n\n" +
+            wxString msg = format_wxstr(_L("%1% will remember your action."), SLIC3R_APP_NAME) + "\n\n" + action + "\n\n" +
                            format_wxstr(_L("Visit \"Preferences\" and check \"%1%\"\nto be asked about unsaved changes again."), preferences_item);
     
             MessageDialog dialog(nullptr, msg, format_wxstr(_L("%1%: Don't ask me again"), SLIC3R_APP_NAME), wxOK | wxCANCEL | wxICON_INFORMATION);

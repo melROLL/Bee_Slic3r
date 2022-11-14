@@ -85,7 +85,6 @@ CopyrightsDialog::CopyrightsDialog()
 void CopyrightsDialog::fill_entries()
 {
     m_entries = {
-		 { "WaspSlicer"     , "2022 WaspSlicer, Melvyn and Leonardo"        , "https://github.com/melROLL/Bee_Slic3r.git" },
         { "SuperSlicer"     , "2022 SuperSlicer"                            , "https://github.com/supermerill/SuperSlicer" },
         { "Slic3r"          , "2022 Slic3r"                                 , "https://github.com/slic3r/slic3r" },
         { "Prusaslicer"     , "2022 PrusaResearch"                          , "https://github.com/prusa3d/PrusaSlicer" },

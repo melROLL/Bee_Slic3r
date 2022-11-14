@@ -794,7 +794,7 @@ void PreferencesDialog::build(size_t selected_tab)
 	m_optgroups_colors.emplace_back(create_options_group(_L("Gui Colors"), tabs, 3));
 	//prusa hue : ~22, Susi hue: ~216, slic3r hue: ~55
 	// color prusa -> susie
-	//ICON 237, 107, 33 -> ed6b21 ; 003ec9
+	//ICON 237, 107, 33 -> ed6b21 ; 2172eb
 	//DARK 237, 107, 33 -> ed6b21 ; 32, 113, 234 2071ea
 	//MAIN 253, 126, 66 -> fd7e42 ; 66, 141, 253 428dfd
 	//LIGHT 254, 177, 139 -> feac8b; 139, 185, 254 8bb9fe
@@ -805,7 +805,7 @@ void PreferencesDialog::build(size_t selected_tab)
 	def.type = coString;
 	def.tooltip = _u8L("Color template used by the icons on the platter.")
 		+ " " + _u8L("It may need a lighter color, as it's used to replace white on top of a dark background.")
-		+ "\n" + _u8L("Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, WaspSlicer(blue): 003ec9");
+		+ "\n" + _u8L("Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 3d83ed");
 	std::string color_str = app_config->get("color_light");
 	if (color_str[0] != '#') color_str = "#" + color_str;
 	def.set_default_value(new ConfigOptionString{ color_str });
@@ -819,7 +819,7 @@ void PreferencesDialog::build(size_t selected_tab)
 	def.type = coString;
 	def.tooltip = _u8L("Main color template.")
 		+ " " + _u8L("If you use a color with higher than 80% saturation and/or value, these will be increased. If lower, they will be decreased.")
-		+ " " + _u8L("Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, WaspSlicer(blue): 003ec9");
+		+ " " + _u8L("Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 296acc");
 	color_str = app_config->get("color");
 	if (color_str[0] != '#') color_str = "#" + color_str;
 	def.set_default_value(new ConfigOptionString{ color_str });
@@ -833,7 +833,7 @@ void PreferencesDialog::build(size_t selected_tab)
 	def.type = coString;
 	def.tooltip = _u8L("This template will be used for drawing button text on hover.")
 		+ " " + _u8L("It can be a good idea to use a bit darker color, as some hues can be a bit difficult to read.")
-		+ " " + _u8L("Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, WaspSlicer(blue): 003ec9");
+		+ " " + _u8L("Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 275cad");
 	color_str = app_config->get("color_dark");
 	if (color_str[0] != '#') color_str = "#" + color_str;
 	def.set_default_value(new ConfigOptionString{ color_str });

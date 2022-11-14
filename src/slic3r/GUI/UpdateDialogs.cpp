@@ -154,7 +154,7 @@ MsgUpdateConfig::~MsgUpdateConfig() {}
 //MsgUpdateForced
 
 MsgUpdateForced::MsgUpdateForced(const std::vector<Update>& updates) :
-    MsgDialog(nullptr, wxString::Format(_(L("WaspSlicer incompatibility")), SLIC3R_APP_NAME), _(L("You must install a configuration update.")) + " ", wxOK | wxICON_ERROR)
+    MsgDialog(nullptr, wxString::Format(_(L("%s incompatibility")), SLIC3R_APP_NAME), _(L("You must install a configuration update.")) + " ", wxOK | wxICON_ERROR)
 {
 	auto* text = new wxStaticText(this, wxID_ANY, wxString::Format(_(L(
 		"%s will now start updates. Otherwise it won't be able to start.\n\n"
