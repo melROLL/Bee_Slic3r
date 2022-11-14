@@ -1733,20 +1733,20 @@ msgstr "Slic3r hiba"
 msgid "Slic3r has encountered an error while taking a configuration snapshot."
 msgstr "A Slic3r hibát észlelt a konfigurációs pillanatfelvétel készítése közben."
 
-# Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): #003ec9
-# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
-#  translation: Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): #003ec9
+# Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 003ec9
+# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
+#  translation: Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): 003ec9
 # 15   changes: Slic3r(yellow): eddc21, PrusaSlicer(orange): fd7e42, SuperSlicer(blue): 428dfd
 #  translation: Slic3r(sárga): eddc21, PrusaSlicer(narancs): fd7e42, SuperSlicer(kék): 428dfd
 # 16   changes: Slic3r(yellow): ada230, PrusaSlicer(orange): c46737, SuperSlicer(blue): 0047c7
 #  translation: Slic3r(sárga): ada230, PrusaSlicer(narancs): c46737, SuperSlicer(kék): 0047c7
 #: src/slic3r/GUI/Preferences.cpp:827
-msgid "Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): #003ec9"
-msgstr "Slic3r(sárga): ccbe29, PrusaSlicer(narancs): cc6429, SuperSlicer(kék): #003ec9"
+msgid "Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 003ec9"
+msgstr "Slic3r(sárga): ccbe29, PrusaSlicer(narancs): cc6429, SuperSlicer(kék): 003ec9"
 
 # Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 296acc
-# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
-#  translation: Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): #003ec9
+# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
+#  translation: Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): 003ec9
 # 15   changes: Slic3r(yellow): ada230, PrusaSlicer(orange): c46737, SuperSlicer(blue): 0047c7
 #  translation: Slic3r(sárga): ada230, PrusaSlicer(narancs): c46737, SuperSlicer(kék): 0047c7
 # 16   changes: Slic3r(yellow): eddc21, PrusaSlicer(orange): fd7e42, SuperSlicer(blue): 428dfd
@@ -1756,8 +1756,8 @@ msgid "Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 2
 msgstr "Slic3r(sárga): ccbe29, PrusaSlicer(narancs): cc6429, SuperSlicer(kék): 296acc"
 
 # Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 3d83ed
-# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
-#  translation: Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): #003ec9
+# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
+#  translation: Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): 003ec9
 # 14   changes: Slic3r(yellow): eddc21, PrusaSlicer(orange): fd7e42, SuperSlicer(blue): 428dfd
 #  translation: Slic3r(sárga): eddc21, PrusaSlicer(narancs): fd7e42, SuperSlicer(kék): 428dfd
 # 16   changes: Slic3r(yellow): ada230, PrusaSlicer(orange): c46737, SuperSlicer(blue): 0047c7
