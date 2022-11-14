@@ -330,7 +330,7 @@ void DesktopIntegrationDialog::perform_desktop_integration()
             // Write slicer desktop file
             std::string desktop_file = GUI::format(
                 "[Desktop Entry]\n"
-                "Name=" SLIC3R_APP_NAME "%1%\n"
+                "Name=WaspSlicer\n"
                 "GenericName=3D Printing Software\n"
                 "Icon=" SLIC3R_APP_KEY "%2%\n"
                 "Exec=\"%3%\" %%F\n"

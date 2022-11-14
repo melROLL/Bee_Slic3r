@@ -710,7 +710,7 @@ static void generic_exception_handle()
     } catch (const std::bad_alloc& ex) {
         // bad_alloc in main thread is most likely fatal. Report immediately to the user (wxLogError would be delayed)
         // and terminate the app so it is at least certain to happen now.
-        wxString errmsg = wxString::Format(_L("%s has encountered an error. It was likely caused by running out of memory. "
+        wxString errmsg = wxString::Format(_L("WaspSlicer has encountered an error. It was likely caused by running out of memory. "
                               "If you are sure you have enough RAM on your system, this may also be a bug and we would "
                               "be glad if you reported it.\n\nThe application will now terminate."), SLIC3R_APP_NAME);
         wxMessageBox(errmsg + "\n\n" + wxString(ex.what()), _L("Fatal error"), wxOK | wxICON_ERROR);
@@ -1079,9 +1079,9 @@ bool GUI_App::on_init_inner()
     // Win32 32bit build.
     if (wxPlatformInfo::Get().GetArchName().substr(0, 2) == "64") {
         RichMessageDialog dlg(nullptr,
-            format_wxstr(_L("You are running a 32 bit build of %s on 64-bit Windows."
+            format_wxstr(_L("You are running a 32 bit build of WaspSlicer on 64-bit Windows."
                 "\n32 bit build of %s will likely not be able to utilize all the RAM available in the system."
-                "\nPlease download and install a 64 bit build of %s."
+                "\nPlease download and install a 64 bit build of WaspSlicer."
                 "\nDo you wish to continue?"),SLIC3R_APP_NAME,SLIC3R_APP_NAME,SLIC3R_APP_NAME),
             SLIC3R_APP_NAME, wxICON_QUESTION | wxYES_NO);
         if (dlg.ShowModal() != wxID_YES)
@@ -1811,7 +1811,7 @@ void GUI_App::check_printer_presets()
     for (const std::string& preset_name : preset_names)
         msg_text += "\n    \"" + from_u8(preset_name) + "\",";
     msg_text.RemoveLast();
-    msg_text += "\n\n" + wxString::Format(_L("But since this version of %s we don't show this information in Printer Settings anymore.\n"
+    msg_text += "\n\n" + wxString::Format(_L("But since this version of WaspSlicer we don't show this information in Printer Settings anymore.\n"
                             "Settings will be available in physical printers settings."), SLIC3R_APP_NAME) + "\n\n" +
                          _L("By default new Printer devices will be named as \"Printer N\" during its creation.\n"
                             "Note: This name can be changed later from the physical printers settings");
