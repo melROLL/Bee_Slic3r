@@ -8394,21 +8394,21 @@ msgstr ""
 
 #: src/slic3r/GUI/Preferences.cpp:808
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): "
-"003ec9"
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
+"#003ec9"
 msgstr ""
 
 
 #: src/slic3r/GUI/Preferences.cpp:794
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): "
-"003ec9"
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
+"#003ec9"
 msgstr ""
 
 
 #: src/slic3r/GUI/Preferences.cpp:780
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): "
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
 "3d83ed"
 msgstr ""
 

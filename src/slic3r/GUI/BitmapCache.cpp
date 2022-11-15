@@ -324,7 +324,7 @@ wxBitmap* BitmapCache::load_svg(const std::string& bitmap_name, unsigned target_
             color_str = "#" + color_str;
         if (color_str.size() == 7) {
             replaces["#ED6B21"] = color_str;
-            replaces["#003ec9"] = color_str;
+            replaces["##003ec9"] = color_str;
         }
     }
 

@@ -92,7 +92,7 @@ const ImVec4 ImGuiWrapper::COL_WINDOW_BACKGROUND = { 0.133f, 0.133f, 0.133f, 0.8
 
 bool ImGuiWrapper::COL_LOADED   = false;
 ImVec4 ImGuiWrapper::COL_DARK   = { 0.0f, 0.28f, 0.78f, 1.0f }; //0047c7
-ImVec4 ImGuiWrapper::COL_LIGHT  = { 0.13f, 0.45f, 0.92f, 1.0f }; //003ec9
+ImVec4 ImGuiWrapper::COL_LIGHT  = { 0.13f, 0.45f, 0.92f, 1.0f }; //#003ec9
 
 void ImGuiWrapper::load_colors()
 {

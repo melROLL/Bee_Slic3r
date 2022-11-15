@@ -2876,43 +2876,43 @@ msgstr ""
 
 
 #: src/slic3r/GUI/Preferences.cpp:808
-#Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): 003ec9
-# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
-#  translation: Slic3r (giallo): cabe39, PrusaSlicer (arancione): ed6b21, SuperSlicer (blu): 003ec9
-# 13   changes: \nSlic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
-#  translation: \nSlic3r(giallo): cabe39, PrusaSlicer(arancione): ed6b21, SuperSlicer(blu): 003ec9
+#Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): #003ec9
+# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
+#  translation: Slic3r (giallo): cabe39, PrusaSlicer (arancione): ed6b21, SuperSlicer (blu): #003ec9
+# 13   changes: \nSlic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
+#  translation: \nSlic3r(giallo): cabe39, PrusaSlicer(arancione): ed6b21, SuperSlicer(blu): #003ec9
 # 15   changes: Slic3r(yellow): eddc21, PrusaSlicer(orange): fd7e42, SuperSlicer(blue): 428dfd
 #  translation: Slic3r (giallo): eddc21, PrusaSlicer (arancione): fd7e42, SuperSlicer (blu): 428dfd
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): "
-"003ec9"
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
+"#003ec9"
 msgstr ""
 
 
 #: src/slic3r/GUI/Preferences.cpp:794
-#Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): 003ec9
-# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
-#  translation: Slic3r (giallo): cabe39, PrusaSlicer (arancione): ed6b21, SuperSlicer (blu): 003ec9
-# 13   changes: \nSlic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
-#  translation: \nSlic3r(giallo): cabe39, PrusaSlicer(arancione): ed6b21, SuperSlicer(blu): 003ec9
-# 15   changes: Slic3r(yellow): ada230, PrusaSlicer(orange): c46737, SuperSlicer(blue): 003ec9
-#  translation: Slic3r (giallo): ada230, PrusaSlicer (arancione): c46737, SuperSlicer (blu): 003ec9
+#Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): #003ec9
+# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
+#  translation: Slic3r (giallo): cabe39, PrusaSlicer (arancione): ed6b21, SuperSlicer (blu): #003ec9
+# 13   changes: \nSlic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
+#  translation: \nSlic3r(giallo): cabe39, PrusaSlicer(arancione): ed6b21, SuperSlicer(blu): #003ec9
+# 15   changes: Slic3r(yellow): ada230, PrusaSlicer(orange): c46737, SuperSlicer(blue): #003ec9
+#  translation: Slic3r (giallo): ada230, PrusaSlicer (arancione): c46737, SuperSlicer (blu): #003ec9
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): "
-"003ec9"
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
+"#003ec9"
 msgstr ""
 
 
 #: src/slic3r/GUI/Preferences.cpp:780
-#Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): 3d83ed
-# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
-#  translation: Slic3r (giallo): cabe39, PrusaSlicer (arancione): ed6b21, SuperSlicer (blu): 003ec9
-# 13   changes: \nSlic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 003ec9
-#  translation: \nSlic3r(giallo): cabe39, PrusaSlicer(arancione): ed6b21, SuperSlicer(blu): 003ec9
+#Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): 3d83ed
+# 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
+#  translation: Slic3r (giallo): cabe39, PrusaSlicer (arancione): ed6b21, SuperSlicer (blu): #003ec9
+# 13   changes: \nSlic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9
+#  translation: \nSlic3r(giallo): cabe39, PrusaSlicer(arancione): ed6b21, SuperSlicer(blu): #003ec9
 # 14   changes: Slic3r(yellow): eddc21, PrusaSlicer(orange): fd7e42, SuperSlicer(blue): 428dfd
 #  translation: Slic3r (giallo): eddc21, PrusaSlicer (arancione): fd7e42, SuperSlicer (blu): 428dfd
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): 003ec9, SuperSlicer(blue): "
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
 "3d83ed"
 msgstr ""
 
