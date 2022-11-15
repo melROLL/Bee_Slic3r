@@ -8,8 +8,8 @@ set(SLIC3R_APP_KEY "SuperSlicer")
 # exe name of the slicer, should be lowercase and valid in all os
 set(SLIC3R_APP_CMD "superslicer")
 # versions
-set(SLIC3R_VERSION "2.4")
-set(SLIC3R_VERSION_FULL "2.4.58.5")
+set(SLIC3R_VERSION "1.3")
+set(SLIC3R_VERSION_FULL "1.3.11.22")
 set(SLIC3R_BUILD_ID "${SLIC3R_APP_KEY}_${SLIC3R_VERSION_FULL}+UNKNOWN")
 set(SLIC3R_RC_VERSION "2,4,58,5")
 set(SLIC3R_RC_VERSION_DOTS "${SLIC3R_VERSION_FULL}")
