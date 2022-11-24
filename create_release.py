@@ -14,7 +14,7 @@ from datetime import date
 import tarfile
 import subprocess
 
-repo = "melROL/Prosciutto_Slic3r"
+repo = "melROLL/Prosciutto_Slic3r"
 program_name = "Prosciutto_Slic3r"
 path_7zip = r"C:\Program Files\7-Zip\7z.exe"
 github_auth_token = "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"
