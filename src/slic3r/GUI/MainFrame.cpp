@@ -13,6 +13,9 @@
 #include <wx/sizer.h>
 #include <wx/tooltip.h>
 
+#include <iostream>
+#include <fstream>
+
 #include <boost/algorithm/string/predicate.hpp>
 #include <boost/log/trivial.hpp>
 
@@ -1522,16 +1525,12 @@ void MainFrame::on_sys_color_changed()
     if (!wxGetApp().tabs_as_menu())
         dynamic_cast<Notebook*>(m_tabpanel)->Rescale();
 #endif
-
     // update Plater
     wxGetApp().plater()->sys_color_changed();
-
     // update Tabs
     for (auto tab : wxGetApp().tabs_list)
         tab->sys_color_changed();
-
     MenuFactory::sys_color_changed(m_menubar);
-
     this->Refresh();
 }
 
@@ -1550,23 +1549,20 @@ static const wxString sep_space = "";
 static wxMenu* generate_help_menu()
 {
     wxMenu* helpMenu = new wxMenu();
-    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s Releases"), SLIC3R_APP_NAME), wxString::Format(_L("Open the %s releases page in your browser"), SLIC3R_APP_NAME),
-        [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog(SLIC3R_DOWNLOAD, nullptr, false); });
-    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s wiki"), SLIC3R_APP_NAME), wxString::Format(_L("Open the %s wiki in your browser"), SLIC3R_APP_NAME),
-        [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://github.com/" SLIC3R_GITHUB "/wiki"); });
-    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s website"), SLIC3R_APP_NAME), _L("Open the Slic3r website in your browser"),
-        [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://slic3r.org"); });
-    //#        my $versioncheck = $self->_append_menu_item($helpMenu, "Check for &Updates...", "Check for new Slic3r versions", sub{
-    //#            wxTheApp->check_version(1);
-    //#        });
-    //#        $versioncheck->Enable(wxTheApp->have_version_check);
+
+    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Wasp Website")), wxString::Format(_L("Open the Wasp Website in your browser")),
+        [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://www.3dwasp.com"); });
+    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Printers Manual")), wxString::Format(_L("Open the %s wiki in your browser"), SLIC3R_APP_NAME),
+ [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://www.3dwasp.com"); });
+
+ helpMenu->AppendSeparator();        
+
+helpMenu->AppendSeparator();
+
     append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Slic3r Manual")),
         wxString::Format(_L("Open the Slic3r Manual in your browser")),
-        //            [this](wxCommandEvent&) { wxGetApp().open_web_page_localized("http://manual.slic3r.org"); });
-        //        append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s &Manual"), SLIC3R_APP_NAME),
-        //                                             wxString::Format(_L("Open the %s manual in your browser"), SLIC3R_APP_NAME),
-        [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://manual.slic3r.org/"); });
-    helpMenu->AppendSeparator();
+              [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://manual.slic3r.org/"); });
+
     append_menu_item(helpMenu, wxID_ANY, _L("System &Info"), _L("Show system information"),
         [](wxCommandEvent&) { wxGetApp().system_info(); });
     append_menu_item(helpMenu, wxID_ANY, _L("Show &Configuration Folder"), _L("Show user configuration folder (datadir)"),
@@ -1589,6 +1585,7 @@ static wxMenu* generate_help_menu()
     helpMenu->AppendSeparator();
     append_menu_item(helpMenu, wxID_ANY, "DEBUG gcode thumbnails", "DEBUG ONLY - read the selected gcode file and generates png for the contained thumbnails",
         [](wxCommandEvent&) { wxGetApp().gcode_thumbnails_debug(); });
+
 #endif // ENABLE_THUMBNAIL_GENERATOR_DEBUG
 
     return helpMenu;
@@ -1962,7 +1959,7 @@ void MainFrame::init_menubar_as_editor()
             [this](wxCommandEvent&) { wxGetApp().calibration_cube_dialog(); });
     }
 
-    // objects menu
+    // generation menu
     wxMenu* generationMenu = nullptr;
     if (wxGetApp().is_editor())
     {
@@ -1974,6 +1971,17 @@ void MainFrame::init_menubar_as_editor()
         generationMenu->AppendSeparator();
         append_menu_item(generationMenu, wxID_ANY, _(L("Mosaic from picture")), _(L("Create an mosaic-like tile with filament changes.")),
             [this](wxCommandEvent&) { wxGetApp().tiled_canvas_dialog(); });
+
+ generationMenu->AppendSeparator();        
+    append_menu_item(generationMenu, wxID_ANY, wxString::Format(_L("Christmas Tree Generator")), _L("Open the Christmas Tree Generator in your browser"),
+        [this](wxCommandEvent&) { wxLaunchDefaultBrowser("file:///../../vasegenerator/mainVase.html"); });
+        append_menu_item(generationMenu, wxID_ANY, wxString::Format(_L("Christmas Tree Generator")), _L("Open the Christmas Tree Generator in your browser"),
+        [this](wxCommandEvent&) { wxLaunchDefaultBrowser("mainVase.html"); });
+                append_menu_item(generationMenu, wxID_ANY, wxString::Format(_L("DildoGenerator")), _L("Open the Christmas Tree Generator in your browser"),
+        [this](wxCommandEvent&) { wxLaunchDefaultBrowser("/mainVase.html"); });
+append_menu_item(generationMenu, wxID_ANY, wxString::Format(_L("Glass Generator")), _L("Open the Glass Generator in your browser"),
+        [this](wxCommandEvent&) { wxLaunchDefaultBrowser("../../vasegenerator/mainVase.html"); });
+
 
     }
 
@@ -2086,7 +2094,7 @@ void MainFrame::init_menubar_as_gcodeviewer()
     if (viewMenu != nullptr) m_menubar->Append(viewMenu, _L("&View"));
     // Add additional menus from C++
     wxGetApp().add_config_menu(m_menubar);
-    m_menubar->Append(helpMenu, _L("&Help"));
+    m_menubar->Append(helpMenu, _L("&Other"));
     SetMenuBar(m_menubar);
 
 #ifdef __APPLE__

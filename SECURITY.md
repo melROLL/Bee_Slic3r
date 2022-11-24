@@ -10,3 +10,7 @@
 
 last update 2021/10/7
 
+## Reporting a Vulnerability
+
+If the vulnerability isn't dangerous, open an issue.  
+If it's dangerous, you can contact me on discord (link should be available [here](https://github.com/supermerill/SuperSlicer/issues/611), at the end)

@@ -5204,8 +5204,8 @@ msgstr "Sötét szín, RGB hex formátumban."
 msgid "Mainly used as icon color."
 msgstr "Főleg ikonszínként használják."
 
-msgid "Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): #003ec9"
-msgstr "Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): #003ec9"
+msgid "Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 2172eb"
+msgstr "Slic3r(sárga): cabe39, PrusaSlicer(narancs): ed6b21, SuperSlicer(kék): 2172eb"
 
 msgid "Gui color"
 msgstr "Gui szín"

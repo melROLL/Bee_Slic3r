@@ -1,4 +1,4 @@
-# Translation file for Minegasque
+# Translation file for french
 # Copyright (C) 2021
 # This file is distributed under the same license as Slic3r.
 #
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language:mc\n"
+"Language:fr\n"
 
 msgid "!! Can be unstable in some os distribution !!"
 msgstr ""
@@ -11312,24 +11312,24 @@ msgid "Slic3r will never scale the speed below this one."
 msgstr "Slic3r ne fera jamais passer la vitesse en dessous de celle-ci."
 
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
-"#003ec9"
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): "
+"275cad"
 msgstr ""
-"Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : #003ec9, SuperSlicer(bleu) : "
-"#003ec9"
+"Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : cc6429, SuperSlicer(bleu) : "
+"275cad"
 
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): "
 "296acc"
 msgstr ""
-"Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : #003ec9, SuperSlicer(bleu) : "
+"Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : cc6429, SuperSlicer(bleu) : "
 "296acc"
 
 msgid ""
-"Slic3r(yellow): ccbe29, PrusaSlicer(orange): #003ec9, SuperSlicer(blue): "
+"Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): "
 "3d83ed"
 msgstr ""
-"Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : #003ec9, SuperSlicer(bleu) : "
+"Slic3r(jaune) : ccbe29, PrusaSlicer(orange) : cc6429, SuperSlicer(bleu) : "
 "3d83ed"
 
 msgid "Slice"
@@ -12318,7 +12318,7 @@ msgstr ""
 "créée par <b>%1% %4%</b>.\n"
 "\n"
 "La configuration plus récente doit-elle être importée ?\n"
-"Si sci, votre configuration active sera sauvegardée avant l'importation de "
+"Si oui, votre configuration active sera sauvegardée avant l'importation de "
 "la nouvelle configuration."
 
 msgid ""
