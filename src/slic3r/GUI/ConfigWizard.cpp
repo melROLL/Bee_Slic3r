@@ -1227,6 +1227,43 @@ PageCustom::PageCustom(ConfigWizard *parent)
     append(tc_profile_name);
 }
 
+PageUpdate::PageUpdate(ConfigWizard *parent)
+    : ConfigWizardPage(parent, _L("Automatic updates"), _L("Updates"))
+    , version_check(true)
+    , preset_update(true)
+{
+    const AppConfig *app_config = wxGetApp().app_config;
+    auto boldfont = wxSystemSettings::GetFont(wxSYS_DEFAULT_GUI_FONT);
+    boldfont.SetWeight(wxFONTWEIGHT_BOLD);
+
+    auto *box_slic3r = new wxCheckBox(this, wxID_ANY, _L("Check for application updates"));
+    box_slic3r->SetValue(app_config->get("notify_release") != "none");
+    append(box_slic3r);
+    append_text(wxString::Format(_L(
+        "If enabled, %s checks for new application versions online. When a new version becomes available, "
+         "a notification is displayed at the next application startup (never during program usage). "
+         "This is only a notification mechanisms, no automatic installation is done."), SLIC3R_APP_NAME));
+
+    append_spacer(VERTICAL_SPACING);
+
+    auto *box_presets = new wxCheckBox(this, wxID_ANY, _L("Update built-in Presets automatically"));
+    box_presets->SetValue(false);// app_config->get("preset_update") == "1"); // default to no, becasue the conf is never updated anyway. Remove that change if corrected later.
+    append(box_presets);
+    append_text(wxString::Format(_L(
+        "If enabled, %s downloads updates of built-in system presets in the background."
+        "These updates are downloaded into a separate temporary location."
+        "When a new preset version becomes available it is offered at application startup."), SLIC3R_APP_NAME));
+    const auto text_bold = _L("Updates are never applied without user's consent and never overwrite user's customized settings.");
+    auto *label_bold = new wxStaticText(this, wxID_ANY, text_bold);
+    label_bold->SetFont(boldfont);
+    label_bold->Wrap(WRAP_WIDTH);
+    append(label_bold);
+    append_text(_L("Additionally a backup snapshot of the whole configuration is created before an update is applied."));
+
+    box_slic3r->Bind(wxEVT_CHECKBOX, [this](wxCommandEvent &event) { this->version_check = event.IsChecked(); });
+    box_presets->Bind(wxEVT_CHECKBOX, [this](wxCommandEvent &event) { this->preset_update = event.IsChecked(); });
+}
+
 PageReloadFromDisk::PageReloadFromDisk(ConfigWizard* parent)
     : ConfigWizardPage(parent, _L("Reload from disk"), _L("Reload from disk"))
     , full_pathnames(false)
@@ -3002,6 +3039,7 @@ ConfigWizard::ConfigWizard(wxWindow *parent)
 
     p->add_page(p->page_custom   = new PageCustom(this));
     
+    p->add_page(p->page_update   = new PageUpdate(this));
     p->add_page(p->page_reload_from_disk = new PageReloadFromDisk(this));
 #ifdef _WIN32
     p->add_page(p->page_files_association = new PageFilesAssociation(this));
