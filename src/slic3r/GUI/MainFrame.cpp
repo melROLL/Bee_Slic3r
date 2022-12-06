@@ -1550,7 +1550,8 @@ static wxMenu* generate_help_menu()
 {
     wxMenu* helpMenu = new wxMenu();
 
-    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Wasp Website")), wxString::Format(_L("Open the Wasp Website in your browser")),
+    append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Wasp Website")), 
+        wxString::Format(_L("Open the Wasp Website in your browser")),
         [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://www.3dwasp.com"); });
     append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Printers Manual")), wxString::Format(_L("Open the %s wiki in your browser"), SLIC3R_APP_NAME),
  [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://www.3dwasp.com"); });
