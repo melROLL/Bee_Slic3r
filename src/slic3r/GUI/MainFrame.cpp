@@ -1546,6 +1546,8 @@ static const wxString sep = " - ";
 static const wxString sep_space = "";
 #endif
 
+
+# change here mel 
 static wxMenu* generate_help_menu()
 {
     wxMenu* helpMenu = new wxMenu();
@@ -1559,7 +1561,7 @@ static wxMenu* generate_help_menu()
  helpMenu->AppendSeparator();        
 
 helpMenu->AppendSeparator();
-
+ 
     append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("Slic3r Manual")),
         wxString::Format(_L("Open the Slic3r Manual in your browser")),
               [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://manual.slic3r.org/"); });
